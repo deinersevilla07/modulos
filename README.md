@@ -1,4 +1,3 @@
-
 # Módulos en Python
 
 ## Comenzando
@@ -100,4 +99,37 @@ x = sp.symbols('x')
 expresion = x**2 + 2*x + 1
 resultado = sp.expand(expresion)
 print(resultado)
+```
+
+---
+
+# Calculadora simbólica con SymPy y Streamlit
+
+Esta aplicación web permite realizar operaciones simbólicas básicas usando la librería SymPy a través de una interfaz sencilla en Streamlit.
+
+## ¿Qué puedes hacer?
+- Simplificar expresiones
+- Expandir expresiones
+- Factorizar
+- Derivar respecto a x
+- Integrar respecto a x
+
+## ¿Cómo usar?
+1. Ejecuta la aplicación con:
+   ```bash
+   streamlit run app/app.py
+   ```
+2. Ingresa una expresión matemática en el campo de texto (por ejemplo: `x**2 + 2*x + 1`).
+3. Selecciona la operación que deseas realizar.
+
+---
+
+### Requisitos
+- Python 3.12+
+- Streamlit
+- SymPy
+
+Instala dependencias con:
+```bash
+pip install streamlit sympy
 ```
